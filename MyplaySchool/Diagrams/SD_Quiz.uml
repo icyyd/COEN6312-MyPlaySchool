@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_b2TW4KblEeaHxpFXULRcSQ" name="RootElement">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_b25MwKblEeaHxpFXULRcSQ" name="QuizClass">
+      <region xmi:type="uml:Region" xmi:id="_b3LgoKblEeaHxpFXULRcSQ" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_BM6A8KbmEeaHxpFXULRcSQ" source="_j37rAKblEeaHxpFXULRcSQ" target="_qLhI8KblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_CoEXYKbmEeaHxpFXULRcSQ" source="_qLhI8KblEeaHxpFXULRcSQ" target="_qZzckKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_ERlS4KbmEeaHxpFXULRcSQ" name="showQuestion" source="_qZzckKblEeaHxpFXULRcSQ" target="_qlE4cKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_Fc5PcKbmEeaHxpFXULRcSQ" name="selectOption" source="_qlE4cKblEeaHxpFXULRcSQ" target="_qwAWEKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_GLASoKbmEeaHxpFXULRcSQ" source="_qwAWEKblEeaHxpFXULRcSQ" target="_q8X-IKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_IxsoEKbmEeaHxpFXULRcSQ" name="endProcess" source="_q8X-IKblEeaHxpFXULRcSQ" target="_jgEkoKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_KW7ggKbmEeaHxpFXULRcSQ" name="time>=10" source="_qlE4cKblEeaHxpFXULRcSQ" target="_4iDwsKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_LeSKIKbmEeaHxpFXULRcSQ" source="_4iDwsKblEeaHxpFXULRcSQ" target="_jgEkoKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_m7mXoKoXEeaG8ajQGD-mSg" name="backPressed" source="_qZzckKblEeaHxpFXULRcSQ" target="_XlPRoKoXEeaG8ajQGD-mSg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_AzuzQKoYEeaG8ajQGD-mSg" name="endProcess" source="_XlPRoKoXEeaG8ajQGD-mSg" target="_jgEkoKblEeaHxpFXULRcSQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_6JhIkKoYEeaG8ajQGD-mSg" name="nextQuestion" source="_qwAWEKblEeaHxpFXULRcSQ" target="_qZzckKblEeaHxpFXULRcSQ"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_jgEkoKblEeaHxpFXULRcSQ" name="End"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_j37rAKblEeaHxpFXULRcSQ"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qLhI8KblEeaHxpFXULRcSQ" name="Start Quiz"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qZzckKblEeaHxpFXULRcSQ" name="In Progress"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qlE4cKblEeaHxpFXULRcSQ" name="Answer Pending"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qwAWEKblEeaHxpFXULRcSQ" name="Answer Provided"/>
+        <subvertex xmi:type="uml:State" xmi:id="_q8X-IKblEeaHxpFXULRcSQ" name="Result"/>
+        <subvertex xmi:type="uml:State" xmi:id="_4iDwsKblEeaHxpFXULRcSQ" name="Timeout"/>
+        <subvertex xmi:type="uml:State" xmi:id="_XlPRoKoXEeaG8ajQGD-mSg" name="Quiz Interrupted"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cHPV4KblEeaHxpFXULRcSQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cHP88KblEeaHxpFXULRcSQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tgjSYKoXEeaG8ajQGD-mSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tgpZAKoXEeaG8ajQGD-mSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_CSTDAKoYEeaG8ajQGD-mSg" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_75WHcKoYEeaG8ajQGD-mSg" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+</xmi:XMI>
