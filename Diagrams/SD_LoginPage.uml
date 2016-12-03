@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tfffUKbeEeaK-rFpPPtprg" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_GyAYUKlDEeatla8ovXgNvQ">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_nCSMUKlEEeazHK1ZQUOYEg">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_tfoCMKbeEeaK-rFpPPtprg" name="LoginPage">
+    <region xmi:type="uml:Region" xmi:id="_tfvW8KbeEeaK-rFpPPtprg" name="loginRequest()">
+      <transition xmi:type="uml:Transition" xmi:id="_KVhdMKbkEeaK-rFpPPtprg" name="loginRequest(username, password)" source="_ysV-sKbeEeaK-rFpPPtprg" target="_zCkGUKbeEeaK-rFpPPtprg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PhlSYKbkEeaK-rFpPPtprg" name="Valid Credentials" source="_zCkGUKbeEeaK-rFpPPtprg">
+        <effect xmi:type="uml:Activity" xmi:id="_HsG20KlIEeazHK1ZQUOYEg" name="asdasdsda"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_WW9OwKbkEeaK-rFpPPtprg" source="_FNB5YKbkEeaK-rFpPPtprg" target="_ysV-sKbeEeaK-rFpPPtprg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4vK1EKbkEeaK-rFpPPtprg" name="signInError()" source="_zCkGUKbeEeaK-rFpPPtprg" target="_FNB5YKbkEeaK-rFpPPtprg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6W_ckKbmEeaK-rFpPPtprg" name="signIn(storedPassword, getPassword)" source="_zCkGUKbeEeaK-rFpPPtprg" target="_u3eFQKbmEeaK-rFpPPtprg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KdBCwKlJEeazHK1ZQUOYEg" source="_c8gUgKbmEeaK-rFpPPtprg" target="_ysV-sKbeEeaK-rFpPPtprg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ysV-sKbeEeaK-rFpPPtprg" name="Not Authenticated" stateInvariant="_HsJTEKlIEeazHK1ZQUOYEg">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_HsJTEKlIEeazHK1ZQUOYEg" name="lasjdklahsd">
+          <specification xmi:type="uml:Duration" xmi:id="_JQZUEKlIEeazHK1ZQUOYEg" name="asdsad"/>
+        </ownedRule>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_zCkGUKbeEeaK-rFpPPtprg" name="Pending Validation"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FNB5YKbkEeaK-rFpPPtprg" name="Login Failure"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_c8gUgKbmEeaK-rFpPPtprg" name="End User"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_u3eFQKbmEeaK-rFpPPtprg" name="Login Success"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5GlkoKbmEeaK-rFpPPtprg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5GmywKbmEeaK-rFpPPtprg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

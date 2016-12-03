@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VfhDgKavEeaeuYpp6U74tA" name="RootElement">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_VfnxMKavEeaeuYpp6U74tA" name="Learning">
+    <region xmi:type="uml:Region" xmi:id="_VfoYQKavEeaeuYpp6U74tA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_wYkjMKopEeaZyPY4FgGqXg" name="Previous/Next Alphabet" source="_LTa1gKopEeaZyPY4FgGqXg" target="_LTa1gKopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QHOGQKoqEeaZyPY4FgGqXg" source="_PItFAKopEeaZyPY4FgGqXg" target="_LTa1gKopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Ya0UIKoqEeaZyPY4FgGqXg" name="Count Alphabet > 26" source="_LTa1gKopEeaZyPY4FgGqXg" target="_i7Ax4KopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fQtN4KoqEeaZyPY4FgGqXg" name="Tap" source="_LTa1gKopEeaZyPY4FgGqXg" target="_LwSXsKopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hVZpgKoqEeaZyPY4FgGqXg" name="Tap" source="_LwSXsKopEeaZyPY4FgGqXg" target="_LTa1gKopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qZtioKoqEeaZyPY4FgGqXg" name="Close Help" source="_ocCVAKoqEeaZyPY4FgGqXg" target="_LwSXsKopEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_rDYKsKoqEeaZyPY4FgGqXg" name="Show Help" source="_LTa1gKopEeaZyPY4FgGqXg" target="_ocCVAKoqEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_v1ZvQKoqEeaZyPY4FgGqXg" name="Show Help" source="_LwSXsKopEeaZyPY4FgGqXg" target="_ocCVAKoqEeaZyPY4FgGqXg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0kmpUKoqEeaZyPY4FgGqXg" name="Close Help" source="_ocCVAKoqEeaZyPY4FgGqXg" target="_LTa1gKopEeaZyPY4FgGqXg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_LTa1gKopEeaZyPY4FgGqXg" name="Showing Alphabet"/>
+      <subvertex xmi:type="uml:State" xmi:id="_LwSXsKopEeaZyPY4FgGqXg" name="Showing Word"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_PItFAKopEeaZyPY4FgGqXg" name="Start"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_i7Ax4KopEeaZyPY4FgGqXg" name="Finish"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ocCVAKoqEeaZyPY4FgGqXg" name="Help"/>
+    </region>
+  </packagedElement>
+</uml:Model>
